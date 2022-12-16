@@ -13,8 +13,7 @@
 
 .rodapePrincipal-navMap-list{
     display: flex;
-    /*flex-direction: column;
-    flex-wrap: wrap;*/
+fle
     flex-flow: column wrap;
     height: 256px; 
 }
