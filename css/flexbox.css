@@ -10,7 +10,7 @@
     display: flex;
 }
 
-/* ---------------- CURS0S ---------------------*/
+/* ---------------- CURS0S -------------------*/
 
 .conteudoPrincipal-cursos{
     display: flex;
@@ -33,20 +33,44 @@
     margin-left: 0;
     margin-right: 0;
 }
-/* --------------- MAPA DO CURSO -----------------*/
+
+/* ----------------- VÍDEO ---------------------*/
+
+.videoSobre .container{
+    display: flex;
+    
+
+}
+
+.videoSobre-sobre{
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    flex-grow: 2;
+    
+}
+
+.videoSobre-sobre-list{
+    flex-grow: 1;
+}
+
+.videoSobre-video{
+    flex-grow: 1;
+    flex-shrink: 2;
+}
+
+/* --------------- MAPA DO CURSO --------------*/
 
 .rodapePrincipal-navMap-list{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    /*flex-flow: column wrap;*/
-    height: 256px; 
+    height: 256px;
+    
 }
 
 
-
-
-/* --------------- RODAPÉ SITE -------------------- */
+/* --------------- RODAPÉ SITE --------------- */
 
 .rodapePrincipal .container{
     display: flex;
@@ -69,4 +93,67 @@
 .rodapePrincipal-contatoForm-fieldset{
     display: flex;
 }
+
+
+
+/* VERSÃO MIBILE */
+
+@media(max-width: 768px){
+
+
+    .cabecalhoPrincipal-nav{
+        flex-direction: column;
+    }
+
+    .cabecalhoPrincipal .container{
+        flex-direction: column;
+        align-items: initial;
+        text-align: center;
+    }
+
+    .conteudoPrincipal-cursos{
+        flex-direction: column;   
+    }
+
+    .conteudoPrincipal-cursos-link{
+        width: 100%;
+        
+    }
+
+    .rodapePrincipal-navMap-list{
+        height: auto;
+    }
+
+    .rodapePrincipal-patrocinadores .container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rodapePrincipal-patrocinadores-list{
+        width: 100%;
+    }
+
+
+    .cabecalhoPrincipal-nav-link-app{
+        order: -1;
+    }
+
+    .rodapePrincipal-contatoForm{
+        width: 100%;
+
+    }
+
+    .rodapePrincipal-contatoForm-fieldset{
+        justify-content: center;
+    }
+
+    .videoSobre .container{
+        flex-direction: column;
+    }
+
+    .videoSobre-video{
+        margin: auto;
+    }
+}
+
 
